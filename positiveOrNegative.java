@@ -1,3 +1,5 @@
+
+import java.util.InputMismatchException;
 import java.util.Scanner;
 public class positiveOrNegative
 {
@@ -6,19 +8,19 @@ public static void main(String[] args)
 try {
 Scanner sc=new Scanner(System.in);
 int n=sc.nextInt();
-}
+sc.close();
 if(n<0){
-	Systen.out.println("It is a negative integer");
+	System.out.println("It is a negative integer");
 }
 else if(n>0){
-	Systen.out.println("It is a positive integer");
+	System.out.println("It is a positive integer");
 }
 else
-	Systen.out.println("you have entered a zero");
+	System.out.println("you have entered a zero");
 
-
-catch(InputmismatchException e){
-	System.out.println("It is not a integer")
+}
+catch(InputMismatchException e){
+	System.out.println("It is not a integer");
 }
 
 
